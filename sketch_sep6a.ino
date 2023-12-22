@@ -192,22 +192,22 @@ void loop()
     }
 
     // Define and Control Cannon:
-    if (ps2.Button(PSB_GREEN))
+    if (ps2.Button(PSB_PAD_DOWN))
     {
       ctrl_dc(MOT_LEFT, (true) ? SPD_MAX : SPD_MAX);
       ctrl_dc(MOT_RIGHT, (true) ? -SPD_MAX : -SPD_MAX);
     }
-    if (ps2.Button(PSB_BLUE))
+    if (ps2.Button(PSB_PAD_UP))
     {
       ctrl_dc(MOT_LEFT, (true) ? -SPD_MAX : -SPD_MAX);
       ctrl_dc(MOT_RIGHT, (true) ? SPD_MAX : SPD_MAX);
     }
-    if (ps2.Button(PSB_PINK))
+    if (ps2.Button(PSB_PAD_LEFT))
     {
       ctrl_dc(MOT_LEFT, (true) ? SPD_MAX : SPD_MAX);
       ctrl_dc(MOT_RIGHT, (true) ? SPD_MAX : SPD_MAX);
     }
-    if (ps2.Button(PSB_RED))
+    if (ps2.Button(PSB_PAD_RIGHT))
     {
       ctrl_dc(MOT_LEFT, (true) ? -SPD_MAX : -SPD_MAX);
       ctrl_dc(MOT_RIGHT, (true) ? -SPD_MAX : -SPD_MAX);
